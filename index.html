@@ -27,14 +27,15 @@
             text-align: center;
         }
 
+        #jwplayerDiv {
+            width: 100%;
+            height: 100vh; /* Set height to fill the viewport */
+        }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <h1>Welcome to Cricket Nation - MOMIXTV</h1>
-        <div id="jwplayerDiv"></div>
-    </div>
+    <div id="jwplayerDiv"></div> <!-- This div is where the player will be rendered -->
 
     <script type="text/javascript">
         jwplayer("jwplayerDiv").setup({
