@@ -11,6 +11,11 @@
         body {
             margin: 0px;
             font-family: Arial, sans-serif;
+            background-color: black; /* Set background to black */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
         }
 
         /* Ensures the video player fills the viewport on all devices */
@@ -20,8 +25,13 @@
             max-height: 100vh; /* Prevents stretching beyond viewport height */
         }
 
-        /* For mobile devices, adjust the width and height to fit properly */
+        /* For mobile devices, adjust the width and height to fit properly and center it */
         @media (max-width: 768px) {
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
             #jwplayerDiv {
                 width: 100vw;
                 height: auto;
@@ -31,6 +41,11 @@
 
         /* For even smaller devices */
         @media (max-width: 480px) {
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
             #jwplayerDiv {
                 width: 100vw;
                 height: auto;
